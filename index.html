@@ -2,9 +2,17 @@
 <html>
 <head>
   <title>David's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
-  <link href="main2.css" rel="stylesheet" type="text/css">
+  <link href="css/main2.css" rel="stylesheet" type="text/css">
+  <script id="project-template" type="text/x-handlebars-template">
+    <div class="col-md-4">
+      <img src="{{thumbnail}}" class="img-responsive thumbnail"/>
+      <p>{{description}}</p>
+    </div>
+  </script>
 </head>
 <body>
   <div class="header">
@@ -23,38 +31,39 @@
   </div>
   <div class="jumbotron">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
+      <div id="project-target" class="row">
+        <!--<div class="col-md-4">
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+          <p>Project about stuff</p>
         </div>
         <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
         </div>
         <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
-        </div>
-        <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
-        </div>
-        <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
-      </div>
-        <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
         </div>
         <div class="col-md-4">
-          <img src="soon.jpg" class="img-responsive thumbnail"/>
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+        </div>
       </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+      </div>
+        <div class="col-md-4">
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+        </div>
+        <div class="col-md-4">
+          <img src="assets/soon.jpg" class="img-responsive thumbnail"/>
+      </div>-->
     </div>
     </div>
   </div>
@@ -69,6 +78,9 @@
     </div>
   </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+<script src="js/project-store.js"></script>
+<script src="js/project.js"></script>
 
 </body>
 

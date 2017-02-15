@@ -10,7 +10,7 @@ body, html {
 
 }
 .header {
-  background-color: #383838;
+  background-color: #F8C98D;
 }
 .header h1 {
   font-family: 'Quicksand', sans-serif;
@@ -39,12 +39,12 @@ body, html {
   height: 100%;
 }
 .main p {
-  color: black;
+  color: #1d3156;
   font-size: 24px;
 }
 
 .main h1 {
-  color: black;
+  color: #1d3156;
   font-weight: 600;
   font-size: 60px;
   text-transform: uppercase;
@@ -55,8 +55,8 @@ body, html {
   background: transparent;
 }
 
-.thumbnail {
-  border: 1px solid black;
+.row {
+  margin-top: 2%;
 }
 
 .projects {
@@ -68,23 +68,20 @@ body, html {
 }
 
 .footer{
-  background-color: #383838;
+  background-color: #F8C98D;
   height: 67px;
-
-
 }
 
 .footer p {
-  color: white;
+  color: #1d3156;
   margin: 0;
   padding: 0;
   display: inline-block;
   float: right;
   margin-top: 20px;
-
-
-
 }
+
+
 .footer ul {
   display: inline-block;
   padding: 0 0 2px;
@@ -104,13 +101,14 @@ body, html {
 }
 .footer ul li a {
   text-decoration: none;
-  color: white;
+  color: #1d3156;
   padding: 0 20px 0 20px;
 
 }
 
 #about {
   background-color: rgba(255, 255, 255, 0.7);
+  display: none;
 }
 
 .feature .container {

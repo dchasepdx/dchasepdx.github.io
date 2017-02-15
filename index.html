@@ -8,9 +8,14 @@
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link href="css/main2.css" rel="stylesheet" type="text/css">
   <script id="project-template" type="text/x-handlebars-template">
-    <div class="col-md-4">
-      <a href="{{link}}"><img src="{{thumbnail}}" class="img-responsive thumbnail"/></a>
-      <p>{{description}}</p>
+    <div class="row">
+      <div class="col-xs-4 col-xs-offset-2">
+        <a href="{{link}}"><img src="{{thumbnail}}" class="img-responsive thumbnail"/></a>
+      </div>
+      <div class="col-xs-4">
+        <p>{{description}}</p>
+      </div>
+      </div>
     </div>
   </script>
 </head>
@@ -31,7 +36,7 @@
   </div>
   <div class="jumbotron">
     <div class="container">
-      <div id="project-target" class="row">
+      <div id="project-target">
       </div>
       <div id="about">
         <h2>Full stack JavaScript developer always looking for a new challenge</h2>

@@ -1,0 +1,13 @@
+  // $('#projects').on('click', function() {
+  //   $('#project-target').show();
+  //   $('#about').hide();
+  // });
+
+  // $('#about').on('click', function() {
+  //   $('#project-target').hide();
+  //   $('#about').show();
+  // });
+
+  // $('#menu').on('click', function() {
+  //   $('ul').toggle();
+  // });

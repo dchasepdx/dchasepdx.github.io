@@ -27,16 +27,23 @@ projects.forEach(function(p) {
 });
 
 (function navigate() {
-  document.getElementById('#projects').onclick = function() {
-    document.getElementById('project-target').style.display = 'block';
-    document.getElementById('about').style.display = 'none';
-  };
-  
-  document.getElementById('#about').onclick = function() {
-    document.getElementById('project-target').style.display = 'none';
-    document.getElementById('about').style.display = 'block';
+  $('#projects').on('click', function() {
+    $('#project-target').show();
+    $('#about').hide();
+  });
 
-  };
+  $('#about-link').on('click', function() {
+    $('#project-target').hide();
+    $('#about').show();
+  });
+
+  $('#menu').on('click', function() {
+    if(!$('#ul').hasClass('show')) {
+      $('#ul').addClass('show');
+    } else {
+      $('#ul').removeClass('show');
+    }
+  });
 })();
 
 

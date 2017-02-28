@@ -9,7 +9,7 @@
   <link href="css/main2.css" rel="stylesheet" type="text/css">
   <script id="project-template" type="text/x-handlebars-template">
     <div class="row">
-      <div class="col-sm-4 col-sm-offset-2">
+      <div class="col-md-4 col-md-offset-2">
         <a href="{{link}}"><img src="{{thumbnail}}" class="img-responsive thumbnail"/></a>
       </div>
       <div class="col-sm-4">
@@ -25,10 +25,10 @@
       <h1>
         David Chase
       </h1>
-      <div class="glyphicon glyphicon-menu-hamburger"></div>
-      <ul>
-        <li><a id="#projects" href="#projects">Projects</a></li>
-        <li><a id="#about" href="#about">About</a></li>
+      <div id ="menu" class="glyphicon glyphicon-menu-hamburger"></div>
+      <ul id="ul">
+        <li><a id="projects" href="#projects">Projects</a></li>
+        <li><a id="about-link" href="#about">About</a></li>
       </ul>
       </div>
 
@@ -40,6 +40,17 @@
       </div>
       <div id="about">
         <h2>Full stack JavaScript developer always looking for a new challenge</h2>
+        <p>
+          I'm a full-stack JavaScript developer with a background in management and sales in the specialty coffee industry. As a developer, I focus on giving users a seamless web experience by writing modular code with a mobile-first approach and automated unit testing. As a manager, my goal is to communicate clearly, and set manageable goals for my team.
+        </p>
+        <h3>Skills</h3>
+          <ul id="skills">
+            <li>JavaScript</li>
+            <li>AngularJS</li>
+            <li>NodeJS</li>
+            <li>Html</li>
+            <li>CSS</li>
+          </ul>
       </div>
     </div>
   </div>
@@ -53,7 +64,7 @@
       <p>&copy David Chase 2016</p>
     </div>
   </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 <script src="js/project-store.js"></script>
 <script src="js/project.js"></script>

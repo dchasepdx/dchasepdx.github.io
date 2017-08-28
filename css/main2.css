@@ -111,15 +111,14 @@ body, html {
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-#skills {
-  list-style-type: none;
-  font-size: 20px;
-  font-weight: 200;
-}
-
 .hide {
   display: block;
 }
+
+.active {
+  border-bottom: 5px solid #1d3156;
+}
+
 @media only screen and (min-width: 444px) {
 
   .header ul {

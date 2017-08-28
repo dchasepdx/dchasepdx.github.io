@@ -28,21 +28,17 @@ projects.forEach(function(p) {
 
 (function navigate() {
   $('#projects').on('click', function() {
+    $('#projects').addClass('active');
+    $('#about-link').removeClass('active');
     $('#project-target').show();
     $('#about').hide();
   });
 
   $('#about-link').on('click', function() {
+    $('#about-link').addClass('active');
+    $('#projects').removeClass('active');
     $('#project-target').hide();
     $('#about').show();
-  });
-
-  $('#menu').on('click', function() {
-    if(!$('#ul').hasClass('show')) {
-      $('#ul').addClass('show');
-    } else {
-      $('#ul').removeClass('show');
-    }
   });
 })();
 
